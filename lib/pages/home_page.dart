@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:car_app/square.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,11 +11,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(height: 200,
-            color: Colors.grey),
-          ),
+          MySquare(image: 'lib/images/Audi Logo.jpeg'),
+          MySquare(image: 'lib/images/BMW logo.png',),
+          MySquare(image: 'lib/images/LandRover Logo.png',),
+          MySquare(image: 'lib/images/Mercedes Logo.jpeg',),
+          MySquare(image: '',),
         ],
       ),
       
