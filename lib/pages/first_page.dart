@@ -9,6 +9,40 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("1st Page")),
+      body: Center(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: Image.asset('lib/images/Logo.png',
+              height: 280,
+              width: 690,
+              ),
+            ),
+
+            const SizedBox(height: 48),
+
+            Text(
+              'Welcome to the Car App!',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              )
+            ),
+
+            const SizedBox(height: 48),
+
+            Text(
+              'All of Your Automotive Needs Simplified',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              )
+            ),
+
+          ],
+        ),
+      ),
       drawer: Drawer(
         backgroundColor: Colors.grey[100],
         child: Column(
@@ -24,6 +58,7 @@ class FirstPage extends StatelessWidget {
               leading: Icon(Icons.home),
               title: Text("H O M E"),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.pushNamed(context, '/homepage');
               },
             ),
