@@ -6,6 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Home Page")),
       drawer: Drawer(
         backgroundColor: Colors.grey[100],
         child: Column(
@@ -19,12 +20,18 @@ class HomePage extends StatelessWidget {
 
             ListTile(
               leading: Icon(Icons.home),
-              title: Text("H O M E")
+              title: Text("H O M E"),
+              onTap: () {
+                Navigator.pushNamed(context, '/homepage');
+              },
             ),
 
             ListTile(
               leading: Icon(Icons.settings),
-              title: Text("S E T T I N G S")
+              title: Text("S E T T I N G S"),
+              onTap: () {
+                Navigator.pushNamed(context, '/settingspage');
+              },
             ),
 
           ],
