@@ -40,6 +40,27 @@ class FirstPage extends StatelessWidget {
               )
             ),
 
+            const SizedBox(height: 48),
+
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[900],
+                borderRadius: BorderRadius.circular(12),
+              ),
+              padding: const EdgeInsets.all(25),
+              child: const Center(
+                child: Text(
+                  'Browse Here',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    ),
+                  
+                  ),
+              ),
+            )
+
           ],
         ),
       ),
