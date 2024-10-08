@@ -1,12 +1,13 @@
-import 'package:car_app/pages/Audi_page.dart';
-import 'package:car_app/pages/BMW_page.dart';
-import 'package:car_app/pages/Landrover_page.dart';
-import 'package:car_app/pages/Mercedes_page.dart';
+
+// ignore_for_file: prefer_const_constructors
+
+import 'package:car_app/pages/first_page.dart';
 import 'package:car_app/pages/home_page.dart';
+import 'package:car_app/pages/settings_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,12 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: FirstPage(),
       routes: {
-        '/BMWpage': (context) => BmwPage(),
-        '/Audipage': (context) => AudiPage(),
-        '/Mercedespage': (context) => MercedesPage(),
-        '/Landroverpage': (context) => LandroverPage(),
+        '/settingspage': (context) => SettingsPage(),
+        '/homepage': (context) => HomePage(),
+        '/firstpage': (context) => FirstPage(),
 
       }
       );

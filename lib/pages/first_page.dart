@@ -1,12 +1,14 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
-class AudiPage extends StatelessWidget {
-  const AudiPage({super.key});
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Audi")),
+      appBar: AppBar(title: Text("1st Page")),
       drawer: Drawer(
         backgroundColor: Colors.grey[100],
         child: Column(
