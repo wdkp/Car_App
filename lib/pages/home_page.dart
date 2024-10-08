@@ -12,10 +12,15 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           MySquare(image: 'lib/images/Audi Logo.jpeg'),
+          MySquare(image: 'lib/images/Aston Martin Logo.png',),
           MySquare(image: 'lib/images/BMW logo.png',),
+          MySquare(image: 'lib/images/Jaguar Logo.png',),
           MySquare(image: 'lib/images/LandRover Logo.png',),
+          MySquare(image: 'lib/images/Lexus Logo.png',),
           MySquare(image: 'lib/images/Mercedes Logo.jpeg',),
-          MySquare(image: '',),
+          MySquare(image: 'lib/images/VW Logo.png',),
+          
+          
         ],
       ),
       
